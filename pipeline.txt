@@ -1,0 +1,9 @@
+1. "audio_record.mp3" -> OpenAI Whisper -> "json_whisper.json"
+2. "audio_record.mp3" -> create_json_sound.py -> "json_sound.js"
+3. "audio_record.mp3" -> mp3_to_wav_mono.py -> "audio_record.wav"
+4. "json_whisper.json"  -> create_json_words.py -> "json_words.json", "json_words.js",  "json_sentences_raw.json"
+5. "audio_record.wav", "json_sentences_raw.json" -> align_json_sentences.py -> "json_sentences_aligned.json", "json_sentences_aligned.js"
+6. "audio_record.wav", "json_sentences_aligned.json" -> audio_fragmentation.py -> "fragments.json", the set of files "fragmentNumber.wav"
+7. "fragments.json", the set of files "fragmentNumber.wav" -> whisper_at.py -> the set of files "fragmentNumber.json"
+8. "fragments.json", the set of files "fragmentNumber.json" -> fragments_join.py -> "whisper_at.json", "laugh.js"
+9. "json_sound.js", "json_words.js", "json_sentences_aligned.js", "laugh.js", "audio_record.wav" -> sound_vis.html
