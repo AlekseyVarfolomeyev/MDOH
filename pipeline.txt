@@ -6,4 +6,4 @@
 6. "audio_record.wav", "json_sentences_aligned.json" -> audio_fragmentation.py -> "fragments.json", the set of files "fragmentNumber.wav"
 7. "fragments.json", the set of files "fragmentNumber.wav" -> whisper_at.py -> the set of files "fragmentNumber.json"
 8. "fragments.json", the set of files "fragmentNumber.json" -> fragments_join.py -> "whisper_at.json", "laugh.js"
-9. "json_sound.js", "json_words.js", "json_sentences_aligned.js", "laugh.js", "audio_record.wav" -> sound_vis.html
+9. "json_sound.js", "json_words.js", "json_sentences_aligned.js", "laugh.js", "audio_record.mp3" -> sound_vis.html
