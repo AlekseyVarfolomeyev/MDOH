@@ -186,7 +186,8 @@
       canvas { border: 1px solid black; }
     </style>
   </head>
-  <body onload="draw()"> 
+  <body onload="draw()">
+<div style="background-color:#cccccc; position:fixed; left: 10px; top: 400px; padding: 10px;">
 Scaling:
 <input type="button" value=">" onclick="et=2*et;draw()">
 <input type="button" value="<" onclick="et=et/2;draw()">
@@ -206,6 +207,7 @@ st_pl=document.getElementById('start_play').value*1000;
 end_pl=document.getElementById('end_play').value*1000;
 audio_play(st_pl,end_pl)"><br>
 La=Laughter, Ba=Baby laughter, Gi=Giggle, Sn=Snicker, Be=Belly laugh, Ch=Chuckle, chortle<br>
+</div>
 <canvas id="sound" width="16000" height="1000"></canvas>
 <audio id="au1" src="audio_record.mp3" controls preload></audio>
   </body>
